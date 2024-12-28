@@ -11,6 +11,36 @@ module.exports = {
       },
     },
   },
-  plugins: [],
-}
-
+  plugins: [require('daisyui')],
+  daisyui: {
+    themes: [
+      {
+        light: {
+          primary: "#0f3c70",
+          secondary: "#3ABFF8",
+          accent: "#F472B6",
+          neutral: "#3D4451",
+          "base-100": "#FFFFFF",
+          info: "#3ABFF8",
+          success: "#36D399",
+          warning: "#FBBD23",
+          error: "#F87272",
+        },
+      },
+      {
+        dark: {
+          primary: "#0f3c70",
+          secondary: "#3ABFF8",
+          accent: "#F472B6",
+          neutral: "#1E293B",
+          "base-100": "#1E293B",
+          info: "#3ABFF8",
+          success: "#36D399",
+          warning: "#FBBD23",
+          error: "#F87272",
+        },
+      },
+      "cupcake", // Use DaisyUI's built-in "cupcake" theme
+    ],
+  },
+};
